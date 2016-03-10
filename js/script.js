@@ -5,16 +5,20 @@ window.Instagram = {
 		opt = opt || {};
 		this.config.client_id = opt.client_id;
 	},
-	users: function(callback) {
-		//https://api.instagram.com/v1/users/18808100/follows?access_token=[ACCESS_TOKEN_HERE]
+	// users: function(callback) {
+	// 	//https://api.instagram.com/v1/users/18808100/follows?access_token=[ACCESS_TOKEN_HERE]
 
-		var endpoint = this.BASE_URL + 'users/287712828/?access_token=1994606189.b2add0c.5918d49679a6480fbad42ade87ab4836'
-		this.getJSON(endpoint, callback);
-	},
+	// 	var endpoint = this.BASE_URL + 'users/287712828/?access_token=1994606189.b2add0c.5918d49679a6480fbad42ade87ab4836'
+	// 	this.getJSON(endpoint, callback);
+	// },
 
 	//https://api.instagram.com/v1/ACCESS-TOKEN
 	tags: function(callback) {
-			var endpoint = this.BASE_URL + 'tags/nerdypickuplines?access_token=1994606189.b2add0c.5918d49679a6480fbad42ade87ab4836'
+			var endpoint = this.BASE_URL + 'tags/nerdypickuplines?access_token=1994606189.b2add0c.5918d49679a6480fbad42ade87ab4836';
+		this.getJSON(endpoint, callback);
+	},
+	popular: function(callback) {
+		var endpoint = this.BASE_URL + 'media/popular?access_token=1994606189.b2add0c.5918d49679a6480fbad42ade87ab4836';
 		this.getJSON(endpoint, callback);
 	},
 
