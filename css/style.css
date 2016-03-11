@@ -1,0 +1,64 @@
+/*===============================
+GENERAL STYLES (page background color)
+================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  background-image: url("http://fullhdpictures.com/wp-content/uploads/2015/04/Backgrounds-Love-Wallpapers.jpg");
+  height: 100vh;
+  margin: 0 auto; /*all our rows will be centered*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial;
+  max-width: 1500px; /*this is the only value that is absolute and in px*/
+}
+
+/*===============================
+Header
+================================*/
+
+h1 {
+	font-family: 'La Belle Aurore', cursive;
+	color: #F7C0A5;
+	text-align: center;
+	font-weight: 350;
+	font-size: 270%; /*relative to the html global fontsize which is at 20px*/
+	word-spacing: 4px;
+	letter-spacing: 1px;
+	height: 10%;
+}
+/*===============================
+Container styles
+================================*/
+.container {
+	height: 70%;
+	width: 100%;
+}
+#love {
+
+
+}
+/*===============================
+Footer Section Tab
+================================*/
+section {
+	height: 30%;
+}
+
+/*===============================
+How to section
+================================*/
+
