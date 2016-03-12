@@ -33,26 +33,35 @@ var lineAPI = [
 
 function nerdLine() {
       var love = document.getElementById('love');
+      //grab the love button for instagram images
       love.addEventListener('click', function(){
+        //function to randomize the lineAPI
         random = Math.floor((Math.random() * 28) + 1);
         var loveLine = lineAPI[random];
+        //established loveline variable to 
+        document.getElementById("starter").src = loveLine;
         console.log(loveLine);
       });
 }
 nerdLine();
 
 function loadReddit() {
-  var exampleURL = "https://www.reddit.com/r/quotes.json";
   $.ajax({
-    url: exampleURL,
+    url: "https://www.reddit.com/r/quotes.json", 
+    //ajax object for reddit url
     dataType: "json",
+    //data type can be json/jsonp/xml
     success: function(response) {
+      //on success, run this anonymous function
       console.log(response);
       var generate = document.getElementById('generate');
       generate.addEventListener('click', function(){
         random = Math.floor((Math.random() * 25) + 1);
         var quote = response.data.children[random].data.title;
+        //establish quote querying the reddit api
         console.log(quote);
+        var redditQuote = document.getElementById('quote');
+        redditQuote.innerHTML = quote;
       });
     }     
   });

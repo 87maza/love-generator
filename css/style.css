@@ -16,7 +16,9 @@ html{
   height: 100vh;
   margin: 0 auto; /*all our rows will be centered*/
   background-repeat: no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
+  background-size: 100% 100%;;
+
 }
 body{
   margin: 0;
@@ -38,24 +40,40 @@ h1 {
 	font-size: 270%; /*relative to the html global fontsize which is at 20px*/
 	word-spacing: 4px;
 	letter-spacing: 1px;
-	height: 10%;
 }
 /*===============================
-Container styles
+PICKUP LINE CONTAINER DIV
 ================================*/
 .container {
-	height: 70%;
-	width: 100%;
-}
-#love {
 
+}
+.polaroid {
+	height: 700px;
+	width: 600px;
+	margin: 0 auto; /*for centering only the parent div's width is 100%*/
+
+}
+#starter {
+	max-width: 100%;
+	border-width: 10px 10px 40px 10px; 
+	border-style: solid; /*polaroid effect*/
+    border-color: #fefdfb;
+    opacity: 0.9; /*small fade*/
+    border-radius: 4px;
+}
+
+#love {
+	
 
 }
 /*===============================
-Footer Section Tab
+REDDIT SECTION
 ================================*/
 section {
-	height: 30%;
+	padding: 10px 10% 0 10%;
+}
+p {
+	color:#A5C0F7;
 }
 
 /*===============================
